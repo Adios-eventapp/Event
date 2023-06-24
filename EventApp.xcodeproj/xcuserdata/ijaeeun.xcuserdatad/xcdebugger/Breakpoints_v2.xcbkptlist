@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "E5B817DB-1084-4F6E-9CA6-303C347072FE"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DE2DF736-61AE-4CE2-A542-8C532CE99160"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EventApp/Sources/Features/Main/MainView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "669251D8-EA2D-4B43-800D-E3E76F358F90"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EventApp/Sources/Features/Main/MainView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "669251D8-EA2D-4B43-800D-E3E76F358F90 - 90bd1099cfcce282"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #2 @Sendable () async -&gt; () in EventApp.MainView.body.getter : some"
+                  moduleName = "EventApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ijaeeun/Desktop/EventApp/EventApp/Sources/Features/Main/MainView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "669251D8-EA2D-4B43-800D-E3E76F358F90 - b38f8e3e339fe6ab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool) -&gt; () in closure #2 @Sendable () async -&gt; () in EventApp.MainView.body.getter : some"
+                  moduleName = "EventApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ijaeeun/Desktop/EventApp/EventApp/Sources/Features/Main/MainView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "96">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

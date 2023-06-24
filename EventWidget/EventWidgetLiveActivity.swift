@@ -1,3 +1,10 @@
+//
+//  EventWidgetLiveActivity.swift
+//  EventWidget
+//
+//  Created by 이재은 on 2023/06/24.
+//
+
 import ActivityKit
 import WidgetKit
 import SwiftUI
@@ -5,7 +12,7 @@ import SwiftUI
 struct EventWidgetAttributes: ActivityAttributes {
     public struct ContentState: Codable, Hashable {
         // Dynamic stateful properties about your activity go here!
-        var emoji: String
+        var value: Int
     }
 
     // Fixed non-changing properties about your activity go here!
@@ -17,7 +24,7 @@ struct EventWidgetLiveActivity: Widget {
         ActivityConfiguration(for: EventWidgetAttributes.self) { context in
             // Lock screen/banner UI goes here
             VStack {
-                Text("Hello \(context.state.emoji)")
+                Text("Hello")
             }
             .activityBackgroundTint(Color.cyan)
             .activitySystemActionForegroundColor(Color.black)
@@ -33,15 +40,15 @@ struct EventWidgetLiveActivity: Widget {
                     Text("Trailing")
                 }
                 DynamicIslandExpandedRegion(.bottom) {
-                    Text("Bottom \(context.state.emoji)")
+                    Text("Bottom")
                     // more content
                 }
             } compactLeading: {
                 Text("L")
             } compactTrailing: {
-                Text("T \(context.state.emoji)")
+                Text("T")
             } minimal: {
-                Text(context.state.emoji)
+                Text("Min")
             }
             .widgetURL(URL(string: "http://www.apple.com"))
             .keylineTint(Color.red)
@@ -49,19 +56,22 @@ struct EventWidgetLiveActivity: Widget {
     }
 }
 
-extension EventWidgetAttributes {
-    fileprivate static var preview: EventWidgetAttributes {
-        EventWidgetAttributes(name: "World")
+struct EventWidgetLiveActivity_Previews: PreviewProvider {
+    static let attributes = EventWidgetAttributes(name: "Me")
+    static let contentState = EventWidgetAttributes.ContentState(value: 3)
+
+    static var previews: some View {
+        attributes
+            .previewContext(contentState, viewKind: .dynamicIsland(.compact))
+            .previewDisplayName("Island Compact")
+        attributes
+            .previewContext(contentState, viewKind: .dynamicIsland(.expanded))
+            .previewDisplayName("Island Expanded")
+        attributes
+            .previewContext(contentState, viewKind: .dynamicIsland(.minimal))
+            .previewDisplayName("Minimal")
+        attributes
+            .previewContext(contentState, viewKind: .content)
+            .previewDisplayName("Notification")
     }
 }
-
-extension EventWidgetAttributes.ContentState {
-    fileprivate static var smiley: EventWidgetAttributes.ContentState {
-        EventWidgetAttributes.ContentState(emoji: "😀")
-     }
-     
-     fileprivate static var starEyes: EventWidgetAttributes.ContentState {
-         EventWidgetAttributes.ContentState(emoji: "🤩")
-     }
-}
-
