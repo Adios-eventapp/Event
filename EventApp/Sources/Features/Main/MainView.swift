@@ -3,16 +3,40 @@ import SwiftUI
 struct MainView: View {
     
     @ObservedObject private var viewModel = MainViewModel()
-    
+    @State private var isCalendarAccessGranted = false
+
     var body: some View {
-        List(viewModel.event, id: \.self){ _ in
-            Text("ss")
+        VStack {
+            if isCalendarAccessGranted {
+                if viewModel.event.isEmpty {
+                    Text("No events found")
+                } else {
+                    List(viewModel.event, id: \.id) { event in
+                        VStack(alignment: .leading) {
+                            Text(event.title)
+                                .font(.headline)
+                            Text(event.startDate, style: .time)
+                                .font(.subheadline)
+                            Text(event.location)
+                                .font(.subheadline)
+                        }
+                    }
+                    .listStyle(.plain)
+                }
+            } else {
+                Text("Calendar access not granted")
+            }
+
         }
-        .listStyle(.plain)
         .padding()
         .navigationBarTitle("Event App")
         .task {
-            viewModel.fetchEventData()
+            viewModel.requestCalendarAccess { granted in
+                isCalendarAccessGranted = granted
+                if granted {
+                    viewModel.fetchEventData()
+                }
+            }
         }
     }
 }

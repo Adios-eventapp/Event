@@ -20,6 +20,7 @@
 		DC66C0D72A46BD5500DCA77C /* EventWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC66C0D62A46BD5500DCA77C /* EventWidget.swift */; };
 		DC66C0D92A46BD5600DCA77C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC66C0D82A46BD5600DCA77C /* Assets.xcassets */; };
 		DC66C0DD2A46BD5600DCA77C /* EventWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DC66C0CE2A46BD5400DCA77C /* EventWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DC66C0E42A46BEDD00DCA77C /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC66C0E32A46BEDD00DCA77C /* EventModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		DC66C0D62A46BD5500DCA77C /* EventWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventWidget.swift; sourceTree = "<group>"; };
 		DC66C0D82A46BD5600DCA77C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC66C0DA2A46BD5600DCA77C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC66C0E32A46BEDD00DCA77C /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 		DC66C0C22A46B4F100DCA77C /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				DC66C0E22A46BED700DCA77C /* Model */,
 				DC66C08B2A46AF1B00DCA77C /* MainView.swift */,
 				DC66C0C32A46B51E00DCA77C /* MainViewModel.swift */,
 			);
@@ -191,6 +194,14 @@
 				DC66C0DA2A46BD5600DCA77C /* Info.plist */,
 			);
 			path = EventWidget;
+			sourceTree = "<group>";
+		};
+		DC66C0E22A46BED700DCA77C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC66C0E32A46BEDD00DCA77C /* EventModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +308,7 @@
 				DC66C08C2A46AF1B00DCA77C /* MainView.swift in Sources */,
 				DC66C08A2A46AF1B00DCA77C /* EventApp.swift in Sources */,
 				DC66C0C12A46B3A300DCA77C /* EventKitService.swift in Sources */,
+				DC66C0E42A46BEDD00DCA77C /* EventModel.swift in Sources */,
 				DC66C0C42A46B51E00DCA77C /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,6 +465,8 @@
 				DEVELOPMENT_TEAM = Q2JZBR7H7Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Please Access";
+				INFOPLIST_KEY_NSRemindersUsageDescription = "Please Access";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -483,6 +497,8 @@
 				DEVELOPMENT_TEAM = Q2JZBR7H7Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Please Access";
+				INFOPLIST_KEY_NSRemindersUsageDescription = "Please Access";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
