@@ -2,19 +2,17 @@ import SwiftUI
 
 struct MainView: View {
     
-    @StateObject private var viewModel = MainViewModel()
+    @ObservedObject private var viewModel = MainViewModel()
     
     var body: some View {
-        List {
-            ForEach(viewModel.fetchEvent, id: \.self) { _ in 
-                
-            }
+        List(viewModel.event, id: \.self){ _ in
+            Text("ss")
         }
         .listStyle(.plain)
         .padding()
         .navigationBarTitle("Event App")
         .task {
-            
+            viewModel.fetchEventData()
         }
     }
 }

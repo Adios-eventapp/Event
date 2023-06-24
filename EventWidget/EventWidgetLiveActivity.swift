@@ -64,3 +64,4 @@ extension EventWidgetAttributes.ContentState {
          EventWidgetAttributes.ContentState(emoji: "🤩")
      }
 }
+

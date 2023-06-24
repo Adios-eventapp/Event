@@ -1,6 +1,11 @@
 import SwiftUI
+import EventKit
 
 final class MainViewModel: ObservableObject {
-    @Published var fetchEvent = EventModel()
+    @Published var event: [EKEvent] = []
     
+    
+    func fetchEventData() {
+        
+    }
 }

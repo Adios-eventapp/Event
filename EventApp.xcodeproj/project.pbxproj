@@ -11,25 +11,23 @@
 		DC66C08C2A46AF1B00DCA77C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC66C08B2A46AF1B00DCA77C /* MainView.swift */; };
 		DC66C08E2A46AF1C00DCA77C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC66C08D2A46AF1C00DCA77C /* Assets.xcassets */; };
 		DC66C0912A46AF1C00DCA77C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC66C0902A46AF1C00DCA77C /* Preview Assets.xcassets */; };
-		DC66C09E2A46AF2D00DCA77C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC66C09D2A46AF2D00DCA77C /* WidgetKit.framework */; };
-		DC66C0A02A46AF2D00DCA77C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC66C09F2A46AF2D00DCA77C /* SwiftUI.framework */; };
-		DC66C0A32A46AF2D00DCA77C /* EventWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC66C0A22A46AF2D00DCA77C /* EventWidgetBundle.swift */; };
-		DC66C0A52A46AF2D00DCA77C /* EventWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC66C0A42A46AF2D00DCA77C /* EventWidgetLiveActivity.swift */; };
-		DC66C0A72A46AF2D00DCA77C /* EventWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC66C0A62A46AF2D00DCA77C /* EventWidget.swift */; };
-		DC66C0A92A46AF2D00DCA77C /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC66C0A82A46AF2D00DCA77C /* AppIntent.swift */; };
-		DC66C0AB2A46AF2E00DCA77C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC66C0AA2A46AF2E00DCA77C /* Assets.xcassets */; };
-		DC66C0AF2A46AF2E00DCA77C /* EventWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DC66C09B2A46AF2D00DCA77C /* EventWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DC66C0C12A46B3A300DCA77C /* EventKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC66C0C02A46B3A300DCA77C /* EventKitService.swift */; };
 		DC66C0C42A46B51E00DCA77C /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC66C0C32A46B51E00DCA77C /* MainViewModel.swift */; };
-		DC66C0C92A46B6C500DCA77C /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC66C0C82A46B6C500DCA77C /* EventModel.swift */; };
+		DC66C0CF2A46BD5500DCA77C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC66C09D2A46AF2D00DCA77C /* WidgetKit.framework */; };
+		DC66C0D02A46BD5500DCA77C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC66C09F2A46AF2D00DCA77C /* SwiftUI.framework */; };
+		DC66C0D32A46BD5500DCA77C /* EventWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC66C0D22A46BD5500DCA77C /* EventWidgetBundle.swift */; };
+		DC66C0D52A46BD5500DCA77C /* EventWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC66C0D42A46BD5500DCA77C /* EventWidgetLiveActivity.swift */; };
+		DC66C0D72A46BD5500DCA77C /* EventWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC66C0D62A46BD5500DCA77C /* EventWidget.swift */; };
+		DC66C0D92A46BD5600DCA77C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC66C0D82A46BD5600DCA77C /* Assets.xcassets */; };
+		DC66C0DD2A46BD5600DCA77C /* EventWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DC66C0CE2A46BD5400DCA77C /* EventWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DC66C0AD2A46AF2E00DCA77C /* PBXContainerItemProxy */ = {
+		DC66C0DB2A46BD5600DCA77C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DC66C07E2A46AF1B00DCA77C /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DC66C09A2A46AF2D00DCA77C;
+			remoteGlobalIDString = DC66C0CD2A46BD5400DCA77C;
 			remoteInfo = EventWidgetExtension;
 		};
 /* End PBXContainerItemProxy section */
@@ -41,7 +39,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				DC66C0AF2A46AF2E00DCA77C /* EventWidgetExtension.appex in Embed Foundation Extensions */,
+				DC66C0DD2A46BD5600DCA77C /* EventWidgetExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,18 +52,16 @@
 		DC66C08B2A46AF1B00DCA77C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		DC66C08D2A46AF1C00DCA77C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC66C0902A46AF1C00DCA77C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DC66C09B2A46AF2D00DCA77C /* EventWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EventWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC66C09D2A46AF2D00DCA77C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		DC66C09F2A46AF2D00DCA77C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		DC66C0A22A46AF2D00DCA77C /* EventWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventWidgetBundle.swift; sourceTree = "<group>"; };
-		DC66C0A42A46AF2D00DCA77C /* EventWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventWidgetLiveActivity.swift; sourceTree = "<group>"; };
-		DC66C0A62A46AF2D00DCA77C /* EventWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventWidget.swift; sourceTree = "<group>"; };
-		DC66C0A82A46AF2D00DCA77C /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
-		DC66C0AA2A46AF2E00DCA77C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DC66C0AC2A46AF2E00DCA77C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC66C0C02A46B3A300DCA77C /* EventKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventKitService.swift; sourceTree = "<group>"; };
 		DC66C0C32A46B51E00DCA77C /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		DC66C0C82A46B6C500DCA77C /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
+		DC66C0CE2A46BD5400DCA77C /* EventWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EventWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC66C0D22A46BD5500DCA77C /* EventWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventWidgetBundle.swift; sourceTree = "<group>"; };
+		DC66C0D42A46BD5500DCA77C /* EventWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		DC66C0D62A46BD5500DCA77C /* EventWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventWidget.swift; sourceTree = "<group>"; };
+		DC66C0D82A46BD5600DCA77C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC66C0DA2A46BD5600DCA77C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,12 +72,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC66C0982A46AF2D00DCA77C /* Frameworks */ = {
+		DC66C0CB2A46BD5400DCA77C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC66C0A02A46AF2D00DCA77C /* SwiftUI.framework in Frameworks */,
-				DC66C09E2A46AF2D00DCA77C /* WidgetKit.framework in Frameworks */,
+				DC66C0D02A46BD5500DCA77C /* SwiftUI.framework in Frameworks */,
+				DC66C0CF2A46BD5500DCA77C /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				DC66C0882A46AF1B00DCA77C /* EventApp */,
-				DC66C0A12A46AF2D00DCA77C /* EventWidget */,
+				DC66C0D12A46BD5500DCA77C /* EventWidget */,
 				DC66C09C2A46AF2D00DCA77C /* Frameworks */,
 				DC66C0872A46AF1B00DCA77C /* Products */,
 			);
@@ -102,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				DC66C0862A46AF1B00DCA77C /* EventApp.app */,
-				DC66C09B2A46AF2D00DCA77C /* EventWidgetExtension.appex */,
+				DC66C0CE2A46BD5400DCA77C /* EventWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,16 +127,6 @@
 				DC66C09F2A46AF2D00DCA77C /* SwiftUI.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DC66C0A12A46AF2D00DCA77C /* EventWidget */ = {
-			isa = PBXGroup;
-			children = (
-				DC66C0BA2A46AFBE00DCA77C /* Support */,
-				DC66C0B92A46AFBA00DCA77C /* Resources */,
-				DC66C0B82A46AFB300DCA77C /* Sources */,
-			);
-			path = EventWidget;
 			sourceTree = "<group>";
 		};
 		DC66C0B42A46AF3500DCA77C /* Sources */ = {
@@ -178,65 +164,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		DC66C0B82A46AFB300DCA77C /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				DC66C0BE2A46AFE400DCA77C /* LiveActivity */,
-				DC66C0BD2A46AFDE00DCA77C /* Widget */,
-				DC66C0BC2A46AFD600DCA77C /* Bundle */,
-				DC66C0BB2A46AFCF00DCA77C /* Intent */,
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
-		DC66C0B92A46AFBA00DCA77C /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				DC66C0AA2A46AF2E00DCA77C /* Assets.xcassets */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		DC66C0BA2A46AFBE00DCA77C /* Support */ = {
-			isa = PBXGroup;
-			children = (
-				DC66C0AC2A46AF2E00DCA77C /* Info.plist */,
-			);
-			path = Support;
-			sourceTree = "<group>";
-		};
-		DC66C0BB2A46AFCF00DCA77C /* Intent */ = {
-			isa = PBXGroup;
-			children = (
-				DC66C0A82A46AF2D00DCA77C /* AppIntent.swift */,
-			);
-			path = Intent;
-			sourceTree = "<group>";
-		};
-		DC66C0BC2A46AFD600DCA77C /* Bundle */ = {
-			isa = PBXGroup;
-			children = (
-				DC66C0A22A46AF2D00DCA77C /* EventWidgetBundle.swift */,
-			);
-			path = Bundle;
-			sourceTree = "<group>";
-		};
-		DC66C0BD2A46AFDE00DCA77C /* Widget */ = {
-			isa = PBXGroup;
-			children = (
-				DC66C0A62A46AF2D00DCA77C /* EventWidget.swift */,
-			);
-			path = Widget;
-			sourceTree = "<group>";
-		};
-		DC66C0BE2A46AFE400DCA77C /* LiveActivity */ = {
-			isa = PBXGroup;
-			children = (
-				DC66C0A42A46AF2D00DCA77C /* EventWidgetLiveActivity.swift */,
-			);
-			path = LiveActivity;
-			sourceTree = "<group>";
-		};
 		DC66C0BF2A46B39000DCA77C /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -248,19 +175,22 @@
 		DC66C0C22A46B4F100DCA77C /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				DC66C0C72A46B6BF00DCA77C /* Model */,
 				DC66C08B2A46AF1B00DCA77C /* MainView.swift */,
 				DC66C0C32A46B51E00DCA77C /* MainViewModel.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
 		};
-		DC66C0C72A46B6BF00DCA77C /* Model */ = {
+		DC66C0D12A46BD5500DCA77C /* EventWidget */ = {
 			isa = PBXGroup;
 			children = (
-				DC66C0C82A46B6C500DCA77C /* EventModel.swift */,
+				DC66C0D22A46BD5500DCA77C /* EventWidgetBundle.swift */,
+				DC66C0D42A46BD5500DCA77C /* EventWidgetLiveActivity.swift */,
+				DC66C0D62A46BD5500DCA77C /* EventWidget.swift */,
+				DC66C0D82A46BD5600DCA77C /* Assets.xcassets */,
+				DC66C0DA2A46BD5600DCA77C /* Info.plist */,
 			);
-			path = Model;
+			path = EventWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,20 +208,20 @@
 			buildRules = (
 			);
 			dependencies = (
-				DC66C0AE2A46AF2E00DCA77C /* PBXTargetDependency */,
+				DC66C0DC2A46BD5600DCA77C /* PBXTargetDependency */,
 			);
 			name = EventApp;
 			productName = EventApp;
 			productReference = DC66C0862A46AF1B00DCA77C /* EventApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DC66C09A2A46AF2D00DCA77C /* EventWidgetExtension */ = {
+		DC66C0CD2A46BD5400DCA77C /* EventWidgetExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC66C0B02A46AF2E00DCA77C /* Build configuration list for PBXNativeTarget "EventWidgetExtension" */;
+			buildConfigurationList = DC66C0DE2A46BD5600DCA77C /* Build configuration list for PBXNativeTarget "EventWidgetExtension" */;
 			buildPhases = (
-				DC66C0972A46AF2D00DCA77C /* Sources */,
-				DC66C0982A46AF2D00DCA77C /* Frameworks */,
-				DC66C0992A46AF2D00DCA77C /* Resources */,
+				DC66C0CA2A46BD5400DCA77C /* Sources */,
+				DC66C0CB2A46BD5400DCA77C /* Frameworks */,
+				DC66C0CC2A46BD5400DCA77C /* Resources */,
 			);
 			buildRules = (
 			);
@@ -299,7 +229,7 @@
 			);
 			name = EventWidgetExtension;
 			productName = EventWidgetExtension;
-			productReference = DC66C09B2A46AF2D00DCA77C /* EventWidgetExtension.appex */;
+			productReference = DC66C0CE2A46BD5400DCA77C /* EventWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -315,7 +245,7 @@
 					DC66C0852A46AF1B00DCA77C = {
 						CreatedOnToolsVersion = 15.0;
 					};
-					DC66C09A2A46AF2D00DCA77C = {
+					DC66C0CD2A46BD5400DCA77C = {
 						CreatedOnToolsVersion = 15.0;
 					};
 				};
@@ -334,7 +264,7 @@
 			projectRoot = "";
 			targets = (
 				DC66C0852A46AF1B00DCA77C /* EventApp */,
-				DC66C09A2A46AF2D00DCA77C /* EventWidgetExtension */,
+				DC66C0CD2A46BD5400DCA77C /* EventWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -349,11 +279,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC66C0992A46AF2D00DCA77C /* Resources */ = {
+		DC66C0CC2A46BD5400DCA77C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC66C0AB2A46AF2E00DCA77C /* Assets.xcassets in Resources */,
+				DC66C0D92A46BD5600DCA77C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,29 +297,27 @@
 				DC66C08C2A46AF1B00DCA77C /* MainView.swift in Sources */,
 				DC66C08A2A46AF1B00DCA77C /* EventApp.swift in Sources */,
 				DC66C0C12A46B3A300DCA77C /* EventKitService.swift in Sources */,
-				DC66C0C92A46B6C500DCA77C /* EventModel.swift in Sources */,
 				DC66C0C42A46B51E00DCA77C /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC66C0972A46AF2D00DCA77C /* Sources */ = {
+		DC66C0CA2A46BD5400DCA77C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC66C0A32A46AF2D00DCA77C /* EventWidgetBundle.swift in Sources */,
-				DC66C0A92A46AF2D00DCA77C /* AppIntent.swift in Sources */,
-				DC66C0A52A46AF2D00DCA77C /* EventWidgetLiveActivity.swift in Sources */,
-				DC66C0A72A46AF2D00DCA77C /* EventWidget.swift in Sources */,
+				DC66C0D32A46BD5500DCA77C /* EventWidgetBundle.swift in Sources */,
+				DC66C0D52A46BD5500DCA77C /* EventWidgetLiveActivity.swift in Sources */,
+				DC66C0D72A46BD5500DCA77C /* EventWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DC66C0AE2A46AF2E00DCA77C /* PBXTargetDependency */ = {
+		DC66C0DC2A46BD5600DCA77C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DC66C09A2A46AF2D00DCA77C /* EventWidgetExtension */;
-			targetProxy = DC66C0AD2A46AF2E00DCA77C /* PBXContainerItemProxy */;
+			target = DC66C0CD2A46BD5400DCA77C /* EventWidgetExtension */;
+			targetProxy = DC66C0DB2A46BD5600DCA77C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -446,7 +374,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -503,7 +431,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -573,7 +501,7 @@
 			};
 			name = Release;
 		};
-		DC66C0B12A46AF2E00DCA77C /* Debug */ = {
+		DC66C0DF2A46BD5600DCA77C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -582,9 +510,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q2JZBR7H7Y;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = EventWidget/Support/Info.plist;
+				INFOPLIST_FILE = EventWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = EventWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -600,7 +529,7 @@
 			};
 			name = Debug;
 		};
-		DC66C0B22A46AF2E00DCA77C /* Release */ = {
+		DC66C0E02A46BD5600DCA77C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -609,9 +538,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q2JZBR7H7Y;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = EventWidget/Support/Info.plist;
+				INFOPLIST_FILE = EventWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = EventWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -648,11 +578,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC66C0B02A46AF2E00DCA77C /* Build configuration list for PBXNativeTarget "EventWidgetExtension" */ = {
+		DC66C0DE2A46BD5600DCA77C /* Build configuration list for PBXNativeTarget "EventWidgetExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DC66C0B12A46AF2E00DCA77C /* Debug */,
-				DC66C0B22A46AF2E00DCA77C /* Release */,
+				DC66C0DF2A46BD5600DCA77C /* Debug */,
+				DC66C0E02A46BD5600DCA77C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
